@@ -1,0 +1,6 @@
+.btn {
+  @apply border;
+  p {
+    @apply text-xs;
+  }
+}
