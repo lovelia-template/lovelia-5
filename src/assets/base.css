@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
-@import url('https://fonts.cdnfonts.com/css/real-miami');
+@import url('https://fonts.cdnfonts.com/css/miama');
 
 body {
   @apply font-merriweather;
@@ -14,13 +14,13 @@ body {
   @apply text-base leading-6 md:text-2xl md:leading-7;
 }
 .content__sub {
-  @apply text-xs leading-6 md:text-base md:leading-8;
+  @apply text-xs leading-6 text-primary-3 md:text-base md:leading-8;
 }
 ::-webkit-scrollbar {
   @apply w-[2px];
 }
 ::-webkit-scrollbar-track {
-  @apply rounded-md bg-slate-100;
+  @apply rounded-md bg-gray-200;
 }
 ::-webkit-scrollbar-thumb {
   @apply bg-primary-3 opacity-50;
@@ -28,6 +28,6 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-primary-1;
 }
-::-webkit-scrollbar-track {
+/* ::-webkit-scrollbar-track {
   @apply my-40;
-}
+} */
