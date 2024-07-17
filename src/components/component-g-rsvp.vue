@@ -20,7 +20,7 @@
       class="flex flex-col items-center justify-center gap-5 md:flex-row md:gap-[87px]"
     >
       <div class="w-full md:w-1/2">
-        <p class="text-primary-3">
+        <p class="content__sub text-primary-3">
           Mohon berikan konfirmasi kehadiran Anda melalui fitur RSVP ini. Doa
           dan ucapan kebahagiaan dari Anda akan menjadi bagian yang tak ternilai
           dalam perayaan pernikahan kami. Terima kasih atas kebaikan hati Anda.
@@ -101,7 +101,7 @@
         type="submit"
         class="btn flex items-center gap-3 border-primary-4 px-28 py-3 text-primary-4"
       >
-        <p class="w-max">Kirim Ucapan</p>
+        <p class="content__sub w-max">Kirim Ucapan</p>
         <icon
           icon="mdi:paper-airplane-variant"
           class="-rotate-45 text-xs"
