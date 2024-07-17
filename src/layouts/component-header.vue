@@ -1,4 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  const emit = defineEmits(['toggle-navbar'])
+
+  const toggleNavbar = () => {
+    emit('toggle-navbar')
+  }
+</script>
 
 <template>
   <main>
@@ -22,8 +28,9 @@
           R
         </h1>
         <div class="absolute right-2 h-full">
-          <div
+          <button
             class="flex h-full flex-col items-end justify-center gap-[6px] md:gap-[14px]"
+            @click="toggleNavbar"
           >
             <span
               class="block h-[2px] w-3 bg-primary-2 opacity-50 md:w-5"
@@ -31,7 +38,7 @@
             <span
               class="block h-[2px] w-4 bg-primary-2 opacity-50 md:w-10"
             ></span>
-          </div>
+          </button>
         </div>
       </div>
     </div>
