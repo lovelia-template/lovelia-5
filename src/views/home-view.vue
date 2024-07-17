@@ -108,8 +108,8 @@
     </div>
     <div id="gallery" ref="galleryRef" class="mt-0 md:mt-52">
       <component-heading
-        tittle="Galeri Foto dan Video"
-        sub="mempelai"
+        tittle="Galeri "
+        sub="Foto dan Video"
         subtittle="chapter - 02"
       ></component-heading>
       <component-d-gallery></component-d-gallery>
@@ -124,8 +124,8 @@
     </div>
     <div id="gift" ref="giftRef" class="mt-0 md:mt-52">
       <component-heading
-        tittle="Kirim"
-        sub="hadiah dan ucapan"
+        tittle="kirim hadiah"
+        sub="Ucapan dan Doa"
         subtittle="chapter - 04"
       ></component-heading>
       <component-f-gift></component-f-gift>
