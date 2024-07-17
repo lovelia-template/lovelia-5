@@ -2,7 +2,9 @@
 
 <template>
   <div class="container">
-    <div class="relative flex flex-col items-center gap-7 py-20 text-primary-1">
+    <div
+      class="relative flex flex-col items-center gap-7 py-[72px] text-primary-1"
+    >
       <div class="relative flex h-[144px] items-center justify-center">
         <img
           src="/images/heading.png"
@@ -15,18 +17,20 @@
           alt=""
         />
         <h1
-          class="relative z-10 max-w-[189px] text-center text-base leading-8 md:max-w-[527px] md:text-2xl md:leading-[48px]"
+          class="heading__title relative z-10 max-w-[189px] text-center md:max-w-[527px]"
         >
           “Kami menantikan momen spesial ini bersama orang-orang tercinta.
           Terima kasih atas kehadiran dan doa Anda.”
         </h1>
       </div>
-      <p class="mt-10 text-left text-primary-3 md:mt-0 md:text-center">
+      <p
+        class="content__sub mt-10 text-left text-primary-3 md:mt-0 md:text-center"
+      >
         Revida & Albert
       </p>
       <div class="mt-7 flex w-full items-center gap-5 opacity-50 md:gap-16">
         <span class="block h-[1px] w-full bg-primary-1"></span>
-        <p>Epilogue</p>
+        <p class="content__sub">Epilogue</p>
       </div>
     </div>
   </div>
