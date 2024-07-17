@@ -17,7 +17,7 @@
         class="relative z-10 flex h-full flex-col items-center justify-center px-10 text-primary-2"
       >
         <div class="mt-10">
-          <p class="text-4xl leading-[72px]">Halo</p>
+          <p class="font-miami text-4xl leading-[72px]">Halo</p>
         </div>
         <div class="mt-[72px] text-center">
           <p class="text-base">Kepada Yth. Bpk/Ibu</p>
