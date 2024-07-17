@@ -11,14 +11,18 @@
       <div
         class="container relative z-10 flex h-full flex-col items-center justify-center"
       >
-        <div class="text-primary-5 mt-[334px] space-y-5 text-center">
-          <h3 class="text-[10px] md:text-base">Wedding Invitations</h3>
-          <h2 class="text-base md:text-2xl">William & Jessica</h2>
-          <h3 class="text-[10px] md:text-base">Sabtu, 14 April 2024</h3>
+        <div class="mt-[334px] space-y-5 text-center text-primary-5">
+          <h3 class="opening__subtitle">Wedding Invitations</h3>
+          <h2 class="content__main">William & Jessica</h2>
+          <h3 class="opening__subtitle">Sabtu, 14 April 2024</h3>
         </div>
       </div>
     </div>
   </main>
 </template>
 
-<style lang="postcss" scoped></style>
+<style lang="postcss" scoped>
+  .opening__subtitle {
+    @apply text-[10px] leading-4 md:text-base md:leading-8;
+  }
+</style>
