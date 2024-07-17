@@ -10,7 +10,6 @@
 
   const modules = [Navigation, Pagination, Scrollbar]
   const isSmallScreen = computed(() => window.innerWidth < 768)
-  console.log(isSmallScreen.value)
 </script>
 
 <template>
