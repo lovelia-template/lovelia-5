@@ -3,11 +3,19 @@
 
   const props = defineProps<{
     navbarActive: boolean
+    activeSection: string
   }>()
-  const emit = defineEmits(['toggle-navbar'])
+  const emit = defineEmits(['toggle-navbar', 'scroll-to-section'])
 
   const toggleNavbar = () => {
     emit('toggle-navbar')
+  }
+
+  const scrollToSection = (section: string) => {
+    toggleNavbar()
+    setTimeout(() => {
+      emit('scroll-to-section', section)
+    }, 300)
   }
 </script>
 
@@ -32,12 +40,60 @@
           <ul
             class="flex h-2/4 flex-col items-center justify-center gap-5 text-base"
           >
-            <li>Kembali ke Atas</li>
-            <li>Tentang Mempelai</li>
-            <li>Galeri & Video</li>
-            <li>Detail Acara</li>
-            <li>Kirim Hadiah & Ucapan</li>
-            <li>RSVP</li>
+            <li>
+              <button
+                class="content__sub"
+                :class="{ 'text-primary-4': props.activeSection === 'opening' }"
+                @click="scrollToSection('opening')"
+              >
+                Kembali ke Atas
+              </button>
+            </li>
+            <li>
+              <button
+                class="content__sub"
+                :class="{ 'text-primary-4': props.activeSection === 'groom' }"
+                @click="scrollToSection('groom')"
+              >
+                Tentang Mempelai
+              </button>
+            </li>
+            <li>
+              <button
+                class="content__sub"
+                :class="{ 'text-primary-4': props.activeSection === 'gallery' }"
+                @click="scrollToSection('gallery')"
+              >
+                Galeri & Video
+              </button>
+            </li>
+            <li>
+              <button
+                class="content__sub"
+                :class="{ 'text-primary-4': props.activeSection === 'wedding' }"
+                @click="scrollToSection('wedding')"
+              >
+                Detail Acara
+              </button>
+            </li>
+            <li>
+              <button
+                class="content__sub"
+                :class="{ 'text-primary-4': props.activeSection === 'gift' }"
+                @click="scrollToSection('gift')"
+              >
+                Kirim Hadiah & Ucapan
+              </button>
+            </li>
+            <li>
+              <button
+                class="content__sub"
+                :class="{ 'text-primary-4': props.activeSection === 'rsvp' }"
+                @click="scrollToSection('rsvp')"
+              >
+                RSVP
+              </button>
+            </li>
           </ul>
           <div class="flex flex-col items-center">
             <p class="content__sub">&copy; Lovelia. All right reserved.</p>
