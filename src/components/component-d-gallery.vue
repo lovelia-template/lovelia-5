@@ -6,8 +6,11 @@
   import 'swiper/css/pagination'
   import 'swiper/css/scrollbar'
   import { Swiper, SwiperSlide } from 'swiper/vue'
+  import { computed } from 'vue'
 
   const modules = [Navigation, Pagination, Scrollbar]
+  const isSmallScreen = computed(() => window.innerWidth < 768)
+  console.log(isSmallScreen.value)
 </script>
 
 <template>
@@ -17,12 +20,12 @@
         class="flex h-full w-full flex-col justify-center text-center md:h-[326px] md:w-1/2 md:text-left"
       >
         <div class="relative pt-0 md:pt-28">
-          <h1 class="">
+          <h1 class="heading__title">
             Galeri
             <span class="block">Foto Mempelai</span>
           </h1>
         </div>
-        <div class="hidden h-1/2 flex-col justify-end md:flex">
+        <div v-if="!isSmallScreen" class="flex h-1/2 flex-col justify-end">
           <div class="relative mt-10 w-[128px]">
             <div class="swiper-button-prev after:hidden">
               <icon
@@ -55,7 +58,7 @@
           </div>
         </div>
       </div>
-      <div class="mt-10 w-full bg-black md:mt-0 md:w-[410px]">
+      <div class="mt-10 w-full md:mt-0 md:w-[410px]">
         <swiper
           :modules="modules"
           :grab-cursor="true"
@@ -75,44 +78,44 @@
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
           }"
-          class="relative h-[326px] w-full"
+          class="relative h-[350px] w-full md:h-[326px]"
         >
-          <swiper-slide v-for="index in 25" :key="index" class="">
+          <swiper-slide v-for="index in 5" :key="index" class="">
             <img
               src="/images/image-d-gallery_1.png"
               alt=""
-              class="h-full w-full object-cover"
+              class="h-full max-h-[326px] w-full object-cover"
             />
           </swiper-slide>
-          <div class="flex h-1/2 flex-col justify-end md:hidden">
-            <div class="relative mt-10 w-[128px]">
+          <div v-if="isSmallScreen" class="">
+            <div
+              class="absolute bottom-10 left-8 z-30 flex w-[250px] items-center gap-4"
+            >
+              <div
+                class="swiper-horizontal !relative flex w-[176px] items-center py-4"
+              >
+                <div
+                  class="swiper-scrollbar !relative max-h-[3px] max-w-[176px]"
+                >
+                  <div class="swiper-scrollbar-drag !bg-primary-2"></div>
+                </div>
+              </div>
+              <div
+                class="swiper-pagination !relative flex !w-fit -translate-y-2 justify-end text-primary-2"
+              ></div>
+            </div>
+            <div class="absolute bottom-3 left-0 z-30 flex w-24 items-center">
               <div class="swiper-button-prev after:hidden">
                 <icon
                   icon="heroicons:arrow-long-left-solid"
-                  class="absolute text-3xl text-primary-1"
+                  class="absolute text-4xl text-primary-1"
                 ></icon>
               </div>
-              <div class="swiper-button-next ml-10 after:hidden">
+              <div class="swiper-button-next after:hidden">
                 <icon
                   icon="heroicons:arrow-long-right-solid"
-                  class="absolute text-3xl text-primary-1"
+                  class="absolute text-4xl text-primary-1"
                 ></icon>
-              </div>
-            </div>
-            <div class="relative mt-10 flex h-full w-full items-center gap-4">
-              <div
-                class="swiper-horizontal !relative flex w-[235px] items-center py-4"
-              >
-                <div
-                  class="swiper-scrollbar !relative mt-1 max-h-[3px] max-w-[235px]"
-                >
-                  <div class="swiper-scrollbar-drag !bg-primary-1"></div>
-                </div>
-              </div>
-              <div class="!relative h-full w-16">
-                <span
-                  class="swiper-pagination absolute right-0 cursor-default font-bold text-primary-1"
-                ></span>
               </div>
             </div>
           </div>
@@ -122,7 +125,7 @@
 
     <!-- Video -->
     <div class="mt-40">
-      <h1 class="text-center">Preview Video Mempelai</h1>
+      <h1 class="heading__title text-center">Preview Video Mempelai</h1>
       <div class="mt-10 h-full w-full">
         <img
           src="/images/image-d-gallery_2.png"
@@ -134,7 +137,7 @@
         <button
           class="btn flex items-start gap-3 border-primary-4 px-28 py-3 text-primary-4"
         >
-          <p class="">Kirim Ucapan</p>
+          <p class="content__sub">Kirim Ucapan</p>
           <icon
             icon="mdi:paper-airplane-variant"
             class="-rotate-45 text-xs"
