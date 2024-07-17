@@ -77,7 +77,7 @@
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
           }"
-          class="relative h-[350px] w-full md:h-[326px]"
+          class="relative h-[370px] w-full md:h-[326px]"
         >
           <swiper-slide v-for="index in 5" :key="index" class="">
             <img
@@ -88,7 +88,7 @@
           </swiper-slide>
           <div v-if="isSmallScreen" class="">
             <div
-              class="absolute bottom-10 left-8 z-30 flex w-[250px] items-center gap-4"
+              class="absolute bottom-16 left-8 z-30 flex w-[250px] items-end gap-2"
             >
               <div
                 class="swiper-horizontal !relative flex w-[176px] items-center py-4"
@@ -100,20 +100,20 @@
                 </div>
               </div>
               <div
-                class="swiper-pagination !relative flex !w-fit -translate-y-2 justify-end text-primary-2"
+                class="swiper-pagination !relative flex !w-fit -translate-y-2 justify-end py-1 text-xs text-primary-2"
               ></div>
             </div>
-            <div class="absolute bottom-3 left-0 z-30 flex w-24 items-center">
+            <div class="absolute bottom-2 left-8 z-30 flex w-20 items-center">
               <div class="swiper-button-prev after:hidden">
                 <icon
                   icon="heroicons:arrow-long-left-solid"
-                  class="absolute text-4xl text-primary-1"
+                  class="absolute text-2xl text-primary-1"
                 ></icon>
               </div>
               <div class="swiper-button-next after:hidden">
                 <icon
                   icon="heroicons:arrow-long-right-solid"
-                  class="absolute text-4xl text-primary-1"
+                  class="absolute text-2xl text-primary-1"
                 ></icon>
               </div>
             </div>

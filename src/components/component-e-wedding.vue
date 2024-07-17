@@ -8,7 +8,7 @@
     <div class="pb-[72px] md:mb-0">
       <div class="relative flex flex-col items-center">
         <div class="text-center">
-          <h2 class="heading__subtitle text-primary-3">Save the Date</h2>
+          <h2 class="font-miama text-2xl text-primary-3">Save the Date</h2>
           <h1 class="heading__title mt-3 text-primary-4 md:tracking-[.25rem]">
             Acara Akan Dilaksanakan
           </h1>
@@ -72,7 +72,7 @@
           <button
             class="btn mt-10 flex items-start gap-3 border-primary-4 bg-primary-4 px-28 py-3 text-primary-2"
           >
-            <p class="content__sub w-max">Lihat Lokasi</p>
+            <p class="content__sub w-max !text-primary-2">Lihat Lokasi</p>
             <icon
               icon="mdi:paper-airplane-variant"
               class="-rotate-45 text-xs"
@@ -112,9 +112,9 @@
             </div>
           </div>
           <button
-            class="btn mt-10 flex items-start gap-3 border-primary-4 bg-primary-4 px-28 py-3 text-primary-2"
+            class="btn mt-10 flex items-start gap-3 border-primary-4 bg-primary-4 px-28 py-3 !text-primary-2"
           >
-            <p class="content__sub w-max">Lihat Lokasi</p>
+            <p class="content__sub w-max !text-primary-2">Lihat Lokasi</p>
             <icon
               icon="mdi:paper-airplane-variant"
               class="-rotate-45 text-xs"

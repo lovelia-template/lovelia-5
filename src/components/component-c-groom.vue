@@ -12,10 +12,8 @@
           class="h-[451px] w-[322px] object-cover"
         />
       </div>
-      <div
-        class="mt-5 w-full max-w-full border-primary-1 pl-2 md:mt-0 md:w-1/2"
-      >
-        <h1 class="heading__title">Ucapan Terima Kasih</h1>
+      <div class="mt-5 w-full max-w-full border-primary-1 md:mt-0 md:w-1/2">
+        <h1 class="font-miama mt-10 text-[28px]">Ucapan Terima Kasih</h1>
         <p class="content__sub mt-5">
           Kami adalah Rahma dan Aditya, dua hati yang menyatu dalam cinta sejati
           dan kini berbuah manis dalam ikatan pernikahan

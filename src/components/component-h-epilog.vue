@@ -30,7 +30,7 @@
       </p>
       <div class="mt-7 flex w-full items-center gap-5 opacity-50 md:gap-16">
         <span class="block h-[1px] w-full bg-primary-1"></span>
-        <p class="content__sub">Epilogue</p>
+        <p class="font-miama text-2xl">Epilogue</p>
       </div>
     </div>
   </div>

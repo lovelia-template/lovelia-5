@@ -5,22 +5,31 @@
     <div
       class="relative flex flex-col items-center gap-7 py-[72px] text-primary-1"
     >
-      <div class="mb-7 flex w-full items-center gap-16 opacity-50">
+      <div class="mb-7 flex w-full items-center gap-5 opacity-50 md:gap-16">
         <span class="block h-[1px] w-full bg-primary-1"></span>
-        <p class="content__sub">Prologue</p>
+        <p class="font-miama text-2xl">Prologue</p>
       </div>
       <div class="relative flex h-[144px] items-center justify-center">
         <img
           src="/images/heading.png"
-          class="absolute h-[202px] w-full max-w-[284px] object-cover object-center"
+          class="absolute hidden h-[202px] w-full max-w-[284px] object-cover object-center md:block"
           alt=""
         />
-        <h1 class="heading__title max-w-[527px] text-center">
+        <img
+          src="/images/mobile-heading.png"
+          class="absolute block h-[150px] w-full max-w-[200px] object-cover object-center md:hidden"
+          alt=""
+        />
+        <h1
+          class="heading__title relative z-20 max-w-[200px] text-center md:max-w-[527px]"
+        >
           “Ketika dua hati bersatu, sebuah kisah cinta abadi terukir. Bersama,
           mari kita rayakan cinta dan kebahagiaan kami”
         </h1>
       </div>
-      <p class="content__sub text-left text-primary-3 md:text-center">
+      <p
+        class="content__sub mt-[72px] text-left text-primary-3 md:mt-0 md:text-center"
+      >
         Revida & Albert
       </p>
     </div>

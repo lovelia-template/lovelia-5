@@ -42,7 +42,7 @@
           >
             <li>
               <button
-                class="content__sub"
+                class="text-primary-2"
                 :class="{ 'text-primary-4': props.activeSection === 'opening' }"
                 @click="scrollToSection('opening')"
               >
@@ -51,7 +51,7 @@
             </li>
             <li>
               <button
-                class="content__sub"
+                class="text-primary-2"
                 :class="{ 'text-primary-4': props.activeSection === 'groom' }"
                 @click="scrollToSection('groom')"
               >
@@ -60,7 +60,7 @@
             </li>
             <li>
               <button
-                class="content__sub"
+                class="text-primary-2"
                 :class="{ 'text-primary-4': props.activeSection === 'gallery' }"
                 @click="scrollToSection('gallery')"
               >
@@ -69,7 +69,7 @@
             </li>
             <li>
               <button
-                class="content__sub"
+                class="text-primary-2"
                 :class="{ 'text-primary-4': props.activeSection === 'wedding' }"
                 @click="scrollToSection('wedding')"
               >
@@ -78,7 +78,7 @@
             </li>
             <li>
               <button
-                class="content__sub"
+                class="text-primary-2"
                 :class="{ 'text-primary-4': props.activeSection === 'gift' }"
                 @click="scrollToSection('gift')"
               >
@@ -87,7 +87,7 @@
             </li>
             <li>
               <button
-                class="content__sub"
+                class="text-primary-2"
                 :class="{ 'text-primary-4': props.activeSection === 'rsvp' }"
                 @click="scrollToSection('rsvp')"
               >
@@ -96,7 +96,7 @@
             </li>
           </ul>
           <div class="flex flex-col items-center">
-            <p class="content__sub">&copy; Lovelia. All right reserved.</p>
+            <p class="text-primary-2">&copy; Lovelia. All right reserved.</p>
             <div class="flex justify-end gap-4 py-5 md:justify-start">
               <icon
                 icon="ri:facebook-fill"
