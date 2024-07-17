@@ -25,7 +25,7 @@ export default {
       },
       fontFamily: {
         merriweather: 'Merriweather',
-        miami: 'Real Miami',
+        miama: 'Miama',
       },
     },
   },
