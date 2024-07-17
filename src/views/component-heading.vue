@@ -18,17 +18,13 @@
       <div
         class="relative z-10 flex h-full max-h-[127px] flex-col items-center justify-between pb-2 md:max-h-[156px]"
       >
-        <h1
-          class="text-center text-base capitalize leading-8 md:text-2xl md:leading-[48px]"
-        >
+        <h1 class="heading__title text-center capitalize">
           {{ props.tittle }}
           <span class="block">{{ props.sub }}</span>
         </h1>
-        <h3
-          class="text-xs capitalize leading-4 opacity-50 md:text-base md:leading-8"
-        >
+        <h2 class="heading__subtitle capitalizeopacity-50">
           {{ props.subtittle }}
-        </h3>
+        </h2>
       </div>
     </div>
   </div>
