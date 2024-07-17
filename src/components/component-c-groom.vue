@@ -15,12 +15,12 @@
       <div
         class="mt-5 w-full max-w-full border-primary-1 pl-2 md:mt-0 md:w-1/2"
       >
-        <h1 class="">Ucapan Terima Kasih</h1>
-        <p class="mt-5">
+        <h1 class="heading__title">Ucapan Terima Kasih</h1>
+        <p class="content__sub mt-5">
           Kami adalah Rahma dan Aditya, dua hati yang menyatu dalam cinta sejati
           dan kini berbuah manis dalam ikatan pernikahan
         </p>
-        <p class="mt-3">
+        <p class="content__sub mt-3">
           Dengan rasa syukur yang mendalam, kami mengucapkan
           <span class="font-bold">terima kasih</span>
           atas dukungan dan cinta yang selalu mengiringi langkah kami
@@ -36,11 +36,11 @@
           class="flex w-full items-center justify-start pl-0 md:w-1/2 md:justify-center md:pl-16"
         >
           <div class="md:max-w-[322px]">
-            <h1 class="">
+            <h1 class="heading__title">
               Mifta Husna
               <span class="block">Zsazsaning Ayu, S.Sos.</span>
             </h1>
-            <p class="mt-5 text-primary-3 md:mt-10">
+            <p class="content__sub mt-5 text-primary-3 md:mt-10">
               Putra dari Bapak Rahmadi dan Ibu Yanti Mulyadi
             </p>
             <div class="mt-5 flex gap-4">
@@ -77,11 +77,11 @@
           class="flex w-full items-center justify-end pr-0 md:w-1/2 md:justify-center md:pr-24"
         >
           <div class="max-w-[322px] text-right md:text-left">
-            <h1 class="">
+            <h1 class="heading__title">
               Mifta Husna
               <span class="block">Zsazsaning Ayu, S.Sos.</span>
             </h1>
-            <p class="mt-5 text-primary-3 md:mt-10">
+            <p class="content__sub mt-5 text-primary-3 md:mt-10">
               Putra dari Bapak Rahmadi dan Ibu Yanti Mulyadi
             </p>
             <div class="mt-5 flex justify-end gap-4 md:justify-start">
