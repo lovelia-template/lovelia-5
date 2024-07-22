@@ -1,10 +1,10 @@
 <script setup lang="ts">
   import { Icon } from '@iconify/vue'
-  import { Navigation, Pagination, Scrollbar } from 'swiper'
   import 'swiper/css'
   import 'swiper/css/navigation'
   import 'swiper/css/pagination'
   import 'swiper/css/scrollbar'
+  import { Navigation, Pagination, Scrollbar } from 'swiper/modules'
   import { Swiper, SwiperSlide } from 'swiper/vue'
   import { computed } from 'vue'
 
