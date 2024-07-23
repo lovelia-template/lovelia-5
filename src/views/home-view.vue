@@ -1,4 +1,5 @@
 <script setup lang="ts">
+  import { Icon } from '@iconify/vue'
   import { onMounted, onUnmounted, ref, watch } from 'vue'
   import type { Ref } from 'vue'
   import ComponentAOpening from '@/components/component-a-opening.vue'
@@ -12,7 +13,6 @@
   import ComponentFooter from '@/layouts/component-footer.vue'
   import ComponentHeader from '@/layouts/component-header.vue'
   import ComponentNavbar from '@/layouts/component-navbar.vue'
-  import ComponentHeading from './component-heading.vue'
   import OpeningView from './opening-view.vue'
 
   const navbarActive = ref(false)
@@ -95,53 +95,42 @@
     <div id="opening" ref="openingRef">
       <component-a-opening></component-a-opening>
     </div>
-    <div id="prolog" ref="prologRef" class="mt-28 md:mt-52">
+    <div
+      class="container flex flex-col items-center justify-center pb-9 pt-[72px] md:hidden"
+    >
+      <p class="font-merriweather text-[10px] leading-[15px] text-primary-3">
+        Wedding Invitations
+      </p>
+      <p class="font-gotu py-2 text-base leading-6 text-primary-1">
+        Rahma & Aditya
+      </p>
+      <p class="font-merriweather text-[10px] leading-[15px] text-primary-3">
+        Sabtu, 14 April 2024
+      </p>
+      <icon icon="majesticons:arrow-down" class="mt-10"></icon>
+    </div>
+    <div id="prolog" ref="prologRef" class="">
       <component-b-prolog></component-b-prolog>
     </div>
-    <div id="groom" ref="groomRef" class="mt-0 md:mt-52">
-      <component-heading
-        tittle="Cerita Tentang Kedua"
-        sub="mempelai"
-        subtittle="chapter - 01"
-      ></component-heading>
+    <div id="groom" ref="groomRef" class="">
       <component-c-groom></component-c-groom>
     </div>
-    <div id="gallery" ref="galleryRef" class="mt-0 md:mt-52">
-      <component-heading
-        tittle="Galeri "
-        sub="Foto dan Video"
-        subtittle="chapter - 02"
-      ></component-heading>
+    <div id="gallery" ref="galleryRef" class="">
       <component-d-gallery></component-d-gallery>
     </div>
-    <div id="wedding" ref="weddingRef" class="mt-0 md:mt-52">
-      <component-heading
-        tittle="agenda acara"
-        sub="pernikahan"
-        subtittle="chapter - 03"
-      ></component-heading>
+    <!-- <div id="wedding" ref="weddingRef" class="">
       <component-e-wedding></component-e-wedding>
     </div>
-    <div id="gift" ref="giftRef" class="mt-0 md:mt-52">
-      <component-heading
-        tittle="kirim hadiah"
-        sub="Ucapan dan Doa"
-        subtittle="chapter - 04"
-      ></component-heading>
+    <div id="gift" ref="giftRef" class="">
       <component-f-gift></component-f-gift>
     </div>
-    <div id="rsvp" ref="rsvpRef" class="mt-0 md:mt-52">
-      <component-heading
-        tittle="RSVP: Konfirmasi"
-        sub="kehadiran"
-        subtittle="chapter - 05"
-      ></component-heading>
+    <div id="rsvp" ref="rsvpRef" class="">
       <component-g-rsvp></component-g-rsvp>
-    </div>
-    <div id="epilog" ref="epilogRef" class="mt-0 md:mt-52">
+    </div> -->
+    <div id="epilog" ref="epilogRef" class="">
       <component-h-epilog></component-h-epilog>
     </div>
-    <div class="mt-0 md:mt-52">
+    <div class="">
       <component-footer></component-footer>
     </div>
   </main>

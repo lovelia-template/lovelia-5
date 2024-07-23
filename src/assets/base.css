@@ -1,21 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
-@import url('https://fonts.cdnfonts.com/css/miama');
+@import url('https://fonts.googleapis.com/css2?family=Gotu&family=Kaushan+Script&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-body {
-  @apply font-merriweather;
+.content__heading {
+  @apply font-gotu text-2xl leading-9 tracking-[1.6px];
 }
-.heading__title {
-  @apply text-base leading-8 md:text-2xl md:leading-[48px];
+.content__title {
+  @apply font-gotu text-2xl leading-9 tracking-[1.6px] md:text-2xl md:leading-[48px];
 }
-.heading__subtitle {
-  @apply text-xs leading-4 md:text-base md:leading-8;
+.content__paragraph {
+  @apply font-montserrat text-xs leading-6 text-primary-3 md:text-base md:leading-8;
 }
-.content__main {
-  @apply text-base leading-6 md:text-2xl md:leading-7;
-}
-.content__sub {
-  @apply text-xs leading-6 text-primary-3 md:text-base md:leading-8;
-}
+
 ::-webkit-scrollbar {
   @apply w-[2px];
 }

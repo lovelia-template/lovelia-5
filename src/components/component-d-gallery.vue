@@ -7,24 +7,59 @@
   import { Navigation, Pagination, Scrollbar } from 'swiper/modules'
   import { Swiper, SwiperSlide } from 'swiper/vue'
   import { computed } from 'vue'
+  import ComponentHeading from '@/components/component-heading.vue'
 
   const modules = [Navigation, Pagination, Scrollbar]
   const isSmallScreen = computed(() => window.innerWidth < 768)
+  console.log(isSmallScreen.value)
 </script>
 
 <template>
-  <div class="relative min-h-screen py-[72px] md:container">
-    <div class="relative flex w-full flex-col md:flex-row">
+  <div class="relative md:container md:py-40">
+    <!-- Heading Mobile -->
+    <component-heading number="02" main="galeri" sub="foto"></component-heading>
+
+    <!-- Heading Desktop -->
+    <!-- Heading Desktop -->
+    <img
+      src="/images/start-background.png"
+      class="absolute right-0 hidden -translate-x-full md:block"
+      alt=""
+    />
+    <div class="relative hidden items-center justify-center pt-[141px] md:flex">
+      <div class="absolute right-0 top-0">
+        <p
+          class="font-gotu text-[256px] leading-[424.96px] text-primary-4 text-opacity-75"
+        >
+          02
+        </p>
+      </div>
+      <div class="relative z-10 flex w-full items-center justify-between pb-8">
+        <div class="">
+          <span class="block h-[1px] w-[390px] bg-primary-1"></span>
+        </div>
+        <h1 class="content__heading w-[147px]">
+          Galeri
+          <span class="block">Kami</span>
+        </h1>
+      </div>
+    </div>
+
+    <!-- Section 1 -->
+    <div
+      class="relative z-20 flex w-full flex-col bg-primary-2 py-20 md:flex-row"
+    >
       <div
+        v-if="!isSmallScreen"
         class="flex h-full w-full flex-col justify-center text-center md:h-[326px] md:w-1/2 md:text-left"
       >
-        <div class="relative pt-0 md:pt-28">
-          <h1 class="heading__title">
+        <div class="relative hidden pt-0 md:block md:pt-28">
+          <h1 class="content__title">
             Galeri
             <span class="block">Foto Mempelai</span>
           </h1>
         </div>
-        <div v-if="!isSmallScreen" class="flex h-1/2 flex-col justify-end">
+        <div class="flex h-1/2 flex-col justify-end">
           <div class="relative mt-10 w-[128px]">
             <div class="swiper-button-prev after:hidden">
               <icon
@@ -39,25 +74,24 @@
               ></icon>
             </div>
           </div>
-          <div class="relative mt-10 flex h-full w-full items-center gap-4">
+          <div class="relative mt-10 flex h-full w-full items-center gap-1">
             <div
               class="swiper-horizontal !relative flex w-[235px] items-center py-4"
             >
-              <div
-                class="swiper-scrollbar !relative mt-1 max-h-[3px] max-w-[235px]"
-              >
+              <div class="swiper-scrollbar !relative max-h-[3px] max-w-[235px]">
                 <div class="swiper-scrollbar-drag !bg-primary-1"></div>
               </div>
             </div>
             <div class="!relative h-full w-16">
-              <span
-                class="swiper-pagination absolute right-0 cursor-default font-bold text-primary-1"
-              ></span>
+              <div class="swiper-pagination !text-primary-1">
+                <span class="swiper-pagination-current"></span>
+                <span class="swiper-pagination-total"></span>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="mt-10 w-full md:mt-0 md:w-[410px]">
+      <div class="w-full md:w-[410px]">
         <swiper
           :modules="modules"
           :grab-cursor="true"
@@ -69,9 +103,6 @@
           :pagination="{
             el: '.swiper-pagination',
             type: 'fraction',
-            renderFraction: (currentClass, totalClass) => {
-              return `<span class='${currentClass}'></span> / <span class='${totalClass}'></span>`
-            },
           }"
           :navigation="{
             nextEl: '.swiper-button-next',
@@ -88,7 +119,7 @@
           </swiper-slide>
           <div v-if="isSmallScreen" class="">
             <div
-              class="absolute bottom-16 left-8 z-30 flex w-[250px] items-end gap-2"
+              class="absolute bottom-16 left-[70px] z-30 flex w-[250px] items-end gap-2"
             >
               <div
                 class="swiper-horizontal !relative flex w-[176px] items-center py-4"
@@ -99,21 +130,24 @@
                   <div class="swiper-scrollbar-drag !bg-primary-2"></div>
                 </div>
               </div>
-              <div
-                class="swiper-pagination !relative flex !w-fit -translate-y-2 justify-end py-1 text-xs text-primary-2"
-              ></div>
+              <div class="swiper-pagination !relative mb-3 !text-primary-2">
+                <span class="swiper-pagination-current"></span>
+                <span class="swiper-pagination-total"></span>
+              </div>
             </div>
-            <div class="absolute bottom-2 left-8 z-30 flex w-20 items-center">
+            <div
+              class="absolute bottom-3 left-8 z-30 flex w-[76px] items-center"
+            >
               <div class="swiper-button-prev after:hidden">
                 <icon
-                  icon="heroicons:arrow-long-left-solid"
-                  class="absolute text-2xl text-primary-1"
+                  icon="basil:arrow-left-outline"
+                  class="text-primary-1"
                 ></icon>
               </div>
               <div class="swiper-button-next after:hidden">
                 <icon
-                  icon="heroicons:arrow-long-right-solid"
-                  class="absolute text-2xl text-primary-1"
+                  icon="basil:arrow-right-outline"
+                  class="text-primary-1"
                 ></icon>
               </div>
             </div>
