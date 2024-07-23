@@ -119,7 +119,7 @@
           </swiper-slide>
           <div v-if="isSmallScreen" class="">
             <div
-              class="absolute bottom-16 left-[70px] z-30 flex w-[250px] items-end gap-2"
+              class="absolute bottom-16 left-[70px] z-30 flex w-[200px] items-end gap-1"
             >
               <div
                 class="swiper-horizontal !relative flex w-[176px] items-center py-4"
@@ -130,7 +130,9 @@
                   <div class="swiper-scrollbar-drag !bg-primary-2"></div>
                 </div>
               </div>
-              <div class="swiper-pagination !relative mb-3 !text-primary-2">
+              <div
+                class="swiper-pagination !relative mb-1 !w-14 !text-primary-2"
+              >
                 <span class="swiper-pagination-current"></span>
                 <span class="swiper-pagination-total"></span>
               </div>
